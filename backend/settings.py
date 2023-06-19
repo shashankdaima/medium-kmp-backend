@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'authentication',
 ]
 
@@ -122,3 +123,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL="authentication.User"
+
+CORS_ORIGIN_ALLOW_ALL=True
+CORS_ALLOW_CREDENTIALS=True
